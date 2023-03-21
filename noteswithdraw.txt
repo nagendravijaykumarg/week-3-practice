@@ -1,0 +1,30 @@
+public void withdraw() {
+    System.out.println("Enter withdraw amount");
+              int amount=s.nextInt();
+              if(amount%100==0) {
+               if(amount<=(acBal-500)) {
+              if(amount<=20000) {
+              int five=amount/500;
+              amount=amount%500;
+             int two=amount/200;
+               amount=amount%200;
+              int one=amount%100;
+              System.out.println("Total Five Hundred Notes :"+five);
+		          System.out.println("Total Two Hundred Notes:"+two);
+		          System.out.println("Total Hundred Notes :"+one);
+              acBal=acBal-amount;
+              wcount++;
+             System.out.println("Available bal: "+acBal);
+                      }
+               else {
+               System.out.println("withdraw limit is 20000 only");
+                      }
+                  }
+                  else {
+                    System.out.println("insuffient fund in your account");  
+                  } 
+                  }
+              else {
+                  System.out.println("Please enter multiples of 100 only");
+                }
+                }
